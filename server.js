@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const cors = require('cors');
 const mongoose = require('mongoose');
 
@@ -9,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Ansluter till databasen (MongoDB)
-mongoose.connect("mongodb://localhost:27017/cv").then(() => {
+mongoose.connect(process.env.MONGO_URI).then(() => {
   console.log("Connected to MongoDB");
 }).catch(error => {
   console.log("Error connecting to database", error);
