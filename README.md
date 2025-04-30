@@ -37,4 +37,4 @@ POST http://localhost:3000/workexperiences
 }
 
 ## Deployment
-Projektet (databasen) är skapad i MongoDB Atlas och api:et/webbservices är publicerat på render: https://moment-3-nosql-backend.onrender.com
+Projektet (databasen) är publicerad i MongoDB Atlas och api:et/webbservicen är publicerad på render: https://moment-3-nosql-backend.onrender.com/workexperiences
